@@ -4,6 +4,7 @@
 <!-- index stuff -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="type-scale.css">
 <script src="index.js"></script>
 
 
@@ -27,17 +28,21 @@
   <div id="control" class="is-hidden"><a href="#top"><i class="arrow-up"></i></a></div>
   
   
-  
+
   
   <script type="text/template" id="tpl-data">
 
- <section>
-      <div class="page">
+    <section>
+      <div class="page" style=color:#ccc>
         <img src="logo.png" alt="Kamarble Solutions, LLC">
-        <h1>Kamarble Solutions</h1>
-        <p><i>Your IT Solutions Partner</i></p>
-      </div>  
-  </section>
+        <p><i>Your IT Solutions Partner</i>
+            <div class="text_small footer">Solutions</div>
+            <span class="down_arrow "></span>
+          </p>
+    
+      </div>
+    
+    </section>
 
 
     <% _.each(_.keys(data).sort(), sheet => { %>
